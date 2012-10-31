@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dataTable.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/popup.css"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src="scripts/popup.js"></script>     
+    <script type="text/javascript" src="oauth.js"></script>
+	<script type="text/javascript" src="sha1.js"></script>
+	
+</head>
+
+<body>
+   
+     <!-- <p>jQuery not loaded!</p> -->
+    
+    <div id="loggedinmenu" title="Logged In">    
+        <ul id="menu">
+            <li><a id="menugotoKitch">Go To Kitchology</a></li>
+            <li><a id="menusaverecipes" href="#Save_Recipe">Save Recipe</a></li>
+            <li><a id="menushowrecipes" href="#Show_Recipes">Show Recipes</a></li>
+            <li><a id="menusettings" href="#Settings">Settings</a></li>
+            <li><a id="menulogout" href="#Logout">Logout</a></li>
+        </ul>
+    </div>
+    
+    <div id="logindialog" title="Login">
+          <label for="userName">Username</label><input type="text" size="15" name="userName" id="userName" />
+          <br/>
+          <label for="password">Password</label><input type="password" size="15" name="password" id="password" />
+          </br>
+          <input type="button" name="login" value="login" id="userlogin" />    
+    </div>
+          
+    <div id="savedialog" title="Save Recipe">
+          <label for="sharerecipe">Share Recipe?</label>
+          <input type="checkbox" size="15" name="sharerecipe" id="sharerecipe" />
+          <br/>
+          <input type="button" name="saverecipe" value="Save Recipe" id="saverecipe" />   
+          <br/>
+          <input type="button" name="cancel" value="Cancel" id="cancel" />        
+    </div>
+    
+    <div id="settingsdialog" title="Settings">
+          <label for="setting1">Automatically Share Recipes with Family?</label>
+          <input type="checkbox" size="15" name="setting1" id="setting1" />
+          <br/>
+          <input type="button" name="savesettings" value="Save Settings" id="savesettings" />   
+          <br/>
+          <input type="button" name="cancel2" value="Cancel" id="cancel2" />        
+    </div>
+    
+    <div id="recipetable">
+        <table id="recipes">
+          <thead>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <input type="button" name="Menu" value="Menu" id="tablecancel" />
+    </div>
+    
+</body>
+
+</html>

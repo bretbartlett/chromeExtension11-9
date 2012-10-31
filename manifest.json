@@ -1,0 +1,30 @@
+{
+  "name": "Test Plugin",
+  "version": "0.1",
+  "description": "A browser action to test the menu popup.",
+  "permissions": [
+    "tabs","storage",
+    "https://web.kitchology.com/api/v1/users/login",
+    "https://web.kitchology.com/api/v1/urls",
+    "https://web.kitchology.com/api/v1/urls/secure ",
+    "https://web.kitchology.com/api/v1/users/recipes",
+    "https://web.kitchology.com/api/v1/users/recipes/secure"
+  ],
+  "browser_action": {
+      "default_title": "Menu Popup",
+      "default_icon": "/icons/icon.png",
+      "default_popup": "popup.html"
+  },
+  
+    "background": {
+    "scripts": [
+      "scripts/popup.js",
+      "scripts/jquery-ui.min.js",
+      "scripts/jquery.dataTables.min.js"
+    ]
+  },
+  "manifest_version": 2,
+   
+  "content_security_policy": "object-src 'self'; script-src 'self' https://ajax.googleapis.com"
+  
+}
